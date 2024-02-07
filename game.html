@@ -1,0 +1,192 @@
+<!--Created by felje...-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		<title>; )</title>
+				
+<link rel="stylesheet" href="game.css"></link>
+<script type="text/javascript" src="game.js"></script>	
+</head>
+
+<body onload="main_window()">
+  
+  
+  <!--MUSIC-->
+		<audio class="hdi" id="music0_js" src="shoot.mp3" onclick="ply_msc0()" preload="auto"></audio>		
+		<audio class="hdi" id="music1_js" src="shoot.mp3" onclick="ply_msc1()" preload="auto"></audio>
+		<audio class="hdi" id="music2_js" src="shoot.mp3" onclick="ply_msc2()" preload="auto"></audio>		
+		<audio class="hdi" id="music3_js" src="shoot.mp3" onclick="ply_msc3()" preload="auto"></audio>		
+		<audio class="hdi" id="music4_js" src="shoot.mp3" onclick="ply_msc4()" preload="auto"></audio>
+		<audio class="hdi" id="music5_js" src="shoot.mp3" onclick="ply_msc5()" preload="auto"></audio>		
+				
+<audio class="hdi" id="failed_js" preload="auto"
+src="Failed.mp3" onclick="failed()">
+</audio>
+<audio class="hdi" id="failed1_js" preload="auto"
+src="Failed.mp3" onclick="failed1()">
+</audio>
+<audio class="hdi" id="failed2_js" preload="auto"
+src="Failed.mp3" onclick="failed2()">
+</audio>
+					
+		<div class="Loading_css" id="Loading_js"></div>
+		
+		<div class="main_window_css" id="main_window_js">
+		
+	<div class="cloud_1_css"></div>					
+<div class="cloud_2_css"></div>					
+<div class="cloud_3_css"></div>	
+<div class="bird"></div>
+<p class="title_css">BIRD_HUNT</p>
+
+<!--PLAY_BUTTON-->								
+<input  class="play_css" type="button" value="PLAY" onclick="ply()">			
+
+<p class="tips_css"><span class="spn_css">TIPS:</span> TRY TO REACH 100POINTS SCORE!</p>
+
+
+<input class="Setting_css" id="Setting_js"
+type="button" value="" onclick="Setting()">				
+
+<input class="Setting0_css" id="Setting0_js"
+type="button" value="" onclick="Setting0()">				
+
+
+<div class="Setting1_css" id="Setting1_js">
+  <!--
+<input class="B1" type="button" value="Design1" onclick="design1()">
+-->
+<p class="p1_css"><span class="p1_spn1_css">CREATED BY</span><br><br></b><span class="p1_spn2_css">° Felje ; )</span></p>
+</div>		
+
+				
+<input class="help_css" id="help_js" type="button" value="?" onclick="help()">
+
+<input class="help1_css" id="help1_js" type="button" value="?" onclick="help_a()">
+
+<div class="hw_css" id="hw_js">
+</div>		
+							
+		</div>
+				
+				
+				
+  	<div id="hdi1_js">
+		<div class="game_window-css" id="game_window-js">
+															
+							
+		<div id="clouds_hdi_js">
+		 <div class="cloud1_css" id="cloud1_js"></div>
+	    <div class="cloud2_css" id="cloud2_js"></div>
+		  <div class="cloud3_css" id="cloud3_js"></div>
+			<div class="cloud4_css" id="cloud4_js"></div>
+    </div>
+				
+				<!--NORMAL_LEVEL-->
+				
+<div class="hdi_1_css" id="hdi_1_js">
+  
+<div class="Black_css" id="Black_js"
+onclick="black_js()"></div>
+<div class="White_css" id="White_js"
+onclick="white_js()"></div>
+<div class="Sky_Blue_css" id="Sky_Blue_js" 
+onclick="sky_blue_js()"></div>
+
+<div class="Black1_css" id="Black1_js" 
+onclick="black1_js()"></div>
+<div class="White1_css" id="White1_js" 
+onclick="white1_js()"></div>
+<div class="Sky_Blue1_css" id="Sky_Blue1_js"
+onclick="sky1_blue_js()"></div>
+</div>
+				
+					
+					<!--LEVEL_UP -->
+					<!--LEVEL_100-->
+					
+   <div class="level_up_100_css" id="level_up_100_js">								
+<div class="Black_levelup_css"
+id="Black_levelup_js" 
+onclick="black_levelup_js()"></div>
+<div class="White_levelup_css"
+id="White_levelup_js"
+onclick="white_levelup_js()"></div>
+<div class="Sky_Blue_levelup_css"
+id="Sky_Blue_levelup_js"
+onclick="sky_blue_levelup_js()"></div>
+
+<div class="Black1_levelup_css"
+id="Black1_levelup_js" 
+onclick="black1_levelup_js()"></div>
+<div class="White1_levelup_css" 
+id="White1_levelup_js"
+onclick="white1_levelup_js()"></div>
+<div class="Sky_Blue1_levelup_css" 
+id="Sky_Blue1_levelup_js" 
+onclick="sky1_blue_levelup_js()"></div>
+		</div>
+	
+									
+					
+<div class="Black2_css" id="Black2_js" 
+onclick="black2_js()">
+<div class="Black_Heart" id="Black_Heart"></div>
+</div>
+
+<div class="White2_css" id="White2_js" 
+onclick="white2_js()">
+<div class="Black_Heart" id="Black_Heart"></div>
+</div>
+
+<div class="Sky_Blue2_css" id="Sky_Blue2_js" 
+onclick="sky_blue2_js()">
+<div class="Black_Heart" id="Black_Heart"></div>
+</div>		
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="scoreContainer">								
+<div id="score-text">SCORE</div>
+<div id="score-counter">0</div>
+</div>
+    
+  <label class="text_lf_css">LIFE</label>
+  <span class="span1_css">:</span>
+  <div class="lf_css" id="lf_js">0</div>
+  
+  
+
+  <div class="level100_css" id="level100_js">
+   <p class="levelup100_css">LEVEL UP</p>
+  </div>
+      
+      
+      
+      
+	</div>			
+	</div>
+	
+	
+	
+<div class="gameover_css" id="gameover_js"></div>		
+				
+				
+				
+				
+</body>
+</html>

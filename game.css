@@ -1,0 +1,646 @@
+/*Created by felje...*/
+
+html{
+  touch-action:none;
+}
+
+
+
+
+
+
+.hdi{
+  display:none;
+}
+
+.Loading_css{
+     display:none;
+     position:fixed;
+     width:100%;
+     height:50%;
+		background: url('Loading.gif')no-repeat;
+				background-size:100% 100%;
+				background-position:center;
+				top:20%;
+			
+}
+
+.main_window_css{
+   display:none;
+   position:fixed;
+			width:100%;
+			height:100%;
+			background: url('Game_background.png')no-repeat;
+			background-size:100% 100%;
+			background-position:center;
+			top:0px;
+			left:0px;
+}
+
+.Setting_css{
+     position:fixed;
+				width:40px;
+				height:40px;
+				background: url('Setting_icon.png')no-repeat;
+				background-size:100% 100%;
+				background-position:center;
+				top:1%;
+				left:80%;
+				border-radius:30%;
+				cursor: pointer;
+}
+
+.Setting0_css{
+     display: none;
+     position:fixed;
+				width:40px;
+				height:40px;
+				background: url('Setting_icon.png')no-repeat;
+				background-size:100% 100%;
+				background-position:center;
+				top:1%;
+				left:80%;
+				border-radius:30%;
+				cursor: pointer;
+}
+
+
+.Setting1_css{
+   
+    display:none;
+     position:fixed;
+				width:80%;
+				height:60%;
+				background:#518CA6;
+				top:20%;
+				left:10%;
+				border-radius: 2%;
+				box-shadow: 3px 3px 4px #6A333F;
+}
+
+.B1{
+  font-size: 20px;
+}
+
+.p1_css{
+  text-align: center;
+}
+.p1_spn1_css{
+  font-size: 20px;
+  color: #f00;
+  text-shadow: 2px 2px 2px #555;
+  font-family: serif;
+}
+.p1_spn2_css{
+  color:#009;
+  font-family: monospace;
+}
+.title_css{
+  position: fixed;
+  left:5%;
+  top: 25%;
+  font-size:4.4em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #5AA3BC;
+  animation:title 5s infinite;	
+}
+
+@keyframes title{
+  
+  20%{
+    color:#00D6FD;
+    transform:rotate(10deg);
+  }
+ 50%{color:#BC915A;
+   transform:rotate(0deg);
+ }
+ 80%{color: #69BD7F;
+   transform:rotate(-10deg);
+ }
+ 
+}
+
+
+.play_css{
+    position:fixed;
+    font-size:35px;
+    background-color:#000;
+    color:#fff;
+    bottom:25%;
+    left:40%;
+    border-radius:15%;
+    border-color:#f00;
+    cursor: pointer;
+}
+
+.tips_css{
+  position:fixed;
+     transform-style:preserve-3d;
+     bottom:10%;
+     left:15%;
+     text-shadow: 1px 1px 2px #ddd;
+     font-size:20px;
+}
+
+.spn_css{
+  color:#f00;
+}
+
+.game_window-css{
+     display:none;
+     position: fixed;
+     transform-style:preserve-3d;
+				width:100%;
+				height:100%;
+		  background: url('Game_background.png')no-repeat;
+				background-size:100% 100%;
+				background-position:center;
+				top:0px;
+				left:0px;
+				
+}
+
+.help_css{
+			 position:fixed;
+				width:40px;
+				height:40px;
+				background-color: transparent;
+				font-size:200%;
+				top:1%;
+				left:60%;
+				border-radius:30%;
+				cursor: pointer;
+				color:#fff;
+				font-weight:1000;
+}
+
+.help1_css{
+    display:none;
+			 position:fixed;
+				width:40px;
+				height:40px;
+				background-color: transparent;
+				font-size:200%;
+				top:1%;
+				left:60%;
+				border-radius:30%;
+				cursor: pointer;
+				color:#fff;
+				font-weight:1000;
+}
+
+.hw_css{
+    position:fixed;
+     display:none;
+     width:50%;
+     height:40%;
+			 background: url('How_to_play.png')no-repeat;
+				background-size:100% 100%;
+				background-position:center;
+				left:25%;
+				top:20%;
+				border: 3px solid #ccc;
+				border-radius:2%;
+			transform:rotate(-90deg);
+			
+}
+
+.cloud_1_css{
+  position:fixed;
+   width:70px;
+   height:50px;
+		background: url('Cloud_Animation.gif')no-repeat;
+	background-size:100% 100%;
+	background-position: center;
+	top: 15%;
+	left:10%;
+	
+  
+}
+
+.cloud_2_css{
+  position:fixed;
+   width:100px;
+   height:100px;
+		background: url('Cloud_Animation.gif')no-repeat;
+	background-size:100% 100%;
+	background-position: center;
+	top: 10%;
+	left:40%;
+}
+
+
+.cloud_3_css{
+  position:fixed;
+   width:70px;
+   height:50px;
+		background: url('Cloud_Animation.gif')no-repeat;
+	background-size:100% 100%;
+	background-position: center;
+	top:15%;
+	left:75%;
+}
+
+.scoreContainer {
+    background-color:transparent;
+    width: 10%;
+    color: #fff;
+    top: 1.5%;
+    left: 25%;
+    border: 2px solid #0f0;
+    border-radius: 10px;
+    position: fixed;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+#score-text {
+    font-size: 0.5em;
+}
+#score-counter{
+    font-size: 1em;
+    font-weight: bold;
+    color: #0f0;
+}
+
+.cloud1_css{
+     position:fixed;
+     width:150px;
+     height:150px;
+		background: url('Cloud_Animation.gif')no-repeat;
+				background-size:100% 100%;
+				background-position: center;
+				animation:cld1 30s infinite;	
+				top:15%;
+		left:-20%;
+}
+
+@keyframes cld1{
+				to{left:150%;top:20%;}
+}
+
+.cloud2_css{
+     position:fixed;
+     width:100px;
+     height:100px;
+		background: url('Cloud_Animation.gif')no-repeat;
+				background-size:100% 100%;
+				background-position: center;
+				animation:cld2 120s infinite;	
+				top:5%;		
+				left:-20%;
+}
+
+@keyframes cld2{
+				to{left:150%;top:5%;};
+}
+
+.cloud3_css{
+     position:fixed;
+     width:65px;
+     height:65px;
+		background: url('Cloud_Animation.gif')no-repeat;
+				background-size:100% 100%;
+				background-position: center;
+				animation:cld3 30s infinite;	
+				top:30%;		
+				left:30%;
+}
+
+@keyframes cld3{
+     to{left:150%; top:30%;};
+}
+
+.cloud4_css{
+     position:fixed;
+     width:90px;
+     height:90px;
+		background: url('Cloud_Animation.gif')no-repeat;
+				background-size:100% 100%;
+				background-position: center;
+				animation:cld4 80s infinite;	
+				top:20%;			
+				left:-20%;
+}
+
+@keyframes cld4{
+   to{left:150%; top:50%;};
+}
+
+.bird{
+  position:fixed;
+				width:100px;
+				height:100px;
+				background: url('Sky_Blue.gif')no-repeat;
+				background-size:100% 100%;
+				background-position: center;
+				animation: sky-blue 15s infinite;
+				top:20%;
+				left:-10%;
+				z-index:1;
+}
+@keyframes sky-blue{
+				to{top:15%;}
+
+}
+
+
+.Black_css{
+				position:fixed;
+				width:200px;
+				height:200px;
+				background: url('Black_Bird.gif')no-repeat;
+				background-size:100% 100%;
+				background-position: center;
+				animation: blck 10s infinite;
+				top:50%;
+				left:-20%;
+}
+@keyframes blck{
+				to{left:150%;top:40%;}
+}
+
+.White_css{
+				position:fixed;
+				width:200px;
+				height:200px;
+				background: url('White_Bird.gif')no-repeat;
+				background-size:100% 100%;
+				background-position: center;
+				animation: whte 15s infinite;
+				top:60%;
+				left:-20%;
+}
+@keyframes whte{
+				to{left:150%;top:70%;}
+}
+
+.Sky_Blue_css{
+				position:fixed;
+				width:100px;
+				height:100px;
+				background: url('Sky_Blue.gif')no-repeat;
+				background-size:100% 100%;
+				background-position: center;
+				animation: sky-blue 25s infinite;
+				top:40%;
+				left:-20%;
+}
+@keyframes sky-blue{
+				to{left:150%;top:50%;}
+}
+
+.Black1_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('Black_Bird.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+				animation: blck1 13s infinite;
+				top:85px;
+}
+@keyframes blck1{
+     from{left:-120px;}
+				to{left:1000px;top:200px;}
+}
+
+.White1_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('White_Bird.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+				animation: whte1 37s infinite;
+				top:125px;
+}
+@keyframes whte1{
+     from{transform: translateX(-150px);}
+     to{transform: translateX(1000px);}
+}
+
+.Sky_Blue1_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('Sky_Blue.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+				animation: sky1-blue 20s infinite;
+				top:165px;
+}
+@keyframes sky1-blue{
+     from{transform: translateX(-180px);}
+     to{transform: translateX(1000px);}
+}
+
+.text_lf_css{
+     position:fixed;
+				top:2%;
+				left:5%;
+				color:#f00;
+				font-size:20px;
+}
+.span1_css{
+  position: fixed;
+  top:2%;
+  left:16%;
+  font-size:20px;
+  color:#f00;
+}
+.lf_css{
+     position:fixed;
+				top:2%;
+				left:18%;
+				font-size:20px;
+				color:#0f0;
+}
+
+.Black_Heart{
+    position:relative;
+				width:15px;
+				height:15px;
+				background: url('Black_Heart.png')no-repeat;
+				background-size:15px 15px;
+				background-position: center;
+				top:30px;
+				left:25px;
+}
+
+
+.gameover_css{
+   position:fixed;
+    display:none;
+				width:100%;
+				height:100%;
+				background: url('GAMEover.png')no-repeat;
+				background-size:200% 100%;
+				background-position:center;
+				top:0%;
+				left:0%;
+}
+
+
+
+.Black2_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('Black_Bird.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+			 animation: blck2 8s infinite;
+				top:30%;
+}
+@keyframes blck2{
+     from{left:-120px;}
+				to{left:1000px;}
+}
+
+.White2_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('White_Bird.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+			 animation: whte2 20s infinite;
+				top:15%;
+}
+@keyframes whte2{
+     from{left:-120px;}
+				to{left:1000px;}
+}
+
+.Sky_Blue2_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('Sky_Blue.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+			 animation: sky-blue2 30s infinite;
+				top:35%;
+}
+@keyframes sky-blue2{
+     from{left:-120px;}
+				to{left:1000px;}
+}
+
+.level_up_100_css{
+  display:none;
+  width: 100%;
+  height:100%;
+  background: url('Level100Background.gif')no-repeat;
+	background-size:100% 100%;
+  background-position:center;
+}
+
+.level100_css{
+     position:fixed;
+				display:none;
+				width:50%;
+				height:50%;
+				background-color: transparent;
+				left:25%;
+				top:28%;
+}
+
+.levelup100_css{
+				font-size:400%;
+				font:bold;
+				text-align:center;
+				color:#fff;
+}
+
+
+.Black_levelup_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('Phoenix.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+				animation: blck_lvlup 8s infinite;
+				top:30px;
+}
+@keyframes blck_lvlup{
+     from{left:-80px;}
+				to{left:1000px;top:90px;}
+}
+
+.White_levelup_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('White_Bird.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+				animation: whte_lvlup 15s infinite;
+				top:120px;
+}
+@keyframes whte_lvlup{
+     from{left:-80px;}
+				to{left:1000px;top:190px;}
+}
+
+.Sky_Blue_levelup_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('Sky_Blue.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+				animation: sky-blue_lvlup 3s infinite;
+				top:50px;
+}
+@keyframes sky-blue_lvlup{
+     from{left:-120px;}
+				to{left:1000px;top:130px;}
+}
+
+.Black1_levelup_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('phoenix.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+				animation: blck1_lvlup 6s infinite;
+				top:85px;
+}
+@keyframes blck1_lvlup{
+     from{left:-120px;}
+				to{left:1000px;top:200px;}
+}
+
+.White1_levelup_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('White_Bird.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+				animation: whte1_lvlup 6s infinite;
+				top:125px;
+}
+@keyframes whte1_lvlup{
+     from{transform: translateX(-150px);}
+     to{transform: translateX(1000px);}
+}
+
+.Sky_Blue1_levelup_css{
+				position:fixed;
+				width:70px;
+				height:70px;
+				background: url('Sky_Blue.gif')no-repeat;
+				background-size:70px 70px;
+				background-position: center;
+				animation: sky1-blue_lvlup 8s infinite;
+				top:165px;
+}
+@keyframes sky1-blue_lvlup{
+     from{transform: translateX(-180px);}
+     to{transform: translateX(1000px);}
+}
