@@ -1,1 +1,1 @@
-# Bird-Hunt ANDROID PHONE VERSION 
+# Bird-Hunt
